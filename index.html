@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+  function enter() {
+    var password = "frankenstein";
+    var x = prompt("Password \n Hint: \n The Modern Prometheus ");
+    if (x.toLowerCase() == password) {
+     alert("Are You Sure You Want To Continue?");
+     window.location = "computer.html";
+    }
+    else {
+       alert("No. That's Not It.");
+     window.location = "easel.html";
+    }
+  }
+
+  </script>
+
+
+
+
+  <link rel="stylesheet" href="https://use.typekit.net/ueo6nhx.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+  <link href="./assets/css/shared.css" rel="stylesheet" type="text/css"/>
+  <link href="./assets/css/examples.css" rel="stylesheet" type="text/css"/>
+  <script src="./assets/js/examples.js"></script>
+
+
+</head>
+<body>
+
+<h1></h1>
+<header class="EaselJS">
+
+
+<p>
+  "Remember, thou hast made me more powerful than thyself; my height
+  is superior to thine, my joints more supple. But I will not be tempted to set myself
+  in opposition to thee. I am thy creature, and I will be even mild and docile to my natural
+  lord and king if thou wilt also perform thy part, the which thou owest me." -Mary Shelley (1818)
+</p>
+</header>
+
+<p> Enter Password </p>
+
+
+  <button type="button" onClick="enter()"> Continue Here </button>
+
+
+</body>
+</html>
