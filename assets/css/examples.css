@@ -18,7 +18,7 @@ h1:before {
 header p {
 	padding-bottom: 10px;
 		padding-left: 20px;
-	background: rgba(48, 174, 232, .5);
+	background: rgba(62, 255, 124, .5);
 
 }
 
@@ -31,8 +31,16 @@ header p {
 
 button {
 	font-family: 'JetBrains Mono', monospace;
-	background-color:rgba(48, 174, 232, .5);
+color: #3EFF7C;
+	background-color:rgba(62, 255, 124, .5);
 }
+
+button:hover{
+	color: #00FFFF;
+	background-color:rgba(0, 255, 255, .5);
+}
+
+
 
 .content {
 	width: 400px;
