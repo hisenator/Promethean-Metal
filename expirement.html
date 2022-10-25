@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Webcam</title>
+<link rel="stylesheet" href="https://use.typekit.net/ueo6nhx.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+  <link href="./assets/css/shared.css" rel="stylesheet" type="text/css"/>
+  <link href="./assets/css/examples.css" rel="stylesheet" type="text/css"/>
+  <script src="./assets/js/examples.js"></script>
+
+  <script src="./lib/easeljs-NEXT.js"></script>
+  <body onload="init();">
+  <header>
+    	<h2>You DID This</h2>
+
+    	<p> “When falsehood can look so like the truth, who can assure themselves of certain happiness?”-
+  Mary Shelley (1818) </p>
+    </header>
+
+
+
+  <div id="stage">
+              <video autoplay="true" id="videoElement"></video>
+          </div>
+          <script>
+            var video = document.querySelector("#videoElement");
+            navigator.getUserMedia = navigator.getUserMedia||navigator.webkitGetUserMedia||navigator.mozGetUserMedia||navigator.msGetUserMedia||navigator.oGetUserMedia;
+
+            if(navigator.getUserMedia) {
+              navigator.getUserMedia({video:true}, handleVideo, videoError);
+            }
+
+            function handleVideo(stream) {
+              video.srcObject=stream;
+              video.play();
+            }
+
+            function videoError(e) {
+
+            }
+
+</script>
+
+
+<body>
+
+
+</body>
+</html>
