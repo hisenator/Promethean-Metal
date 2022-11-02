@@ -2,7 +2,7 @@
   <html lang="en">
   <head>
   	<meta charset="utf-8">
-  	<title>Foggy Effect</title>
+  	<title>Eyes Are Windows. Mirrors Are Windows</title>
 <link rel="stylesheet" href="https://use.typekit.net/ueo6nhx.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +17,13 @@
   <body onload="init();">
 
 <header>
-  	<h2>fog</h2>
+  <a href= "./computer.html">	<img src= "./assets/kitlabslogo.png"> </img> </a>
+  	<h2>A Sneak Peak</h2>
 
   	<p> “When falsehood can look so like the truth, who can assure themselves of certain happiness?”-
 Mary Shelley (1818) </p>
   </header>
-		<button type="button"> <a href= "./expirement.html">TOP SECRET</button>
+		<button type="button"> <a href= "./corrrupted.html">TOP SECRET</button>
   <div>
   	<canvas id="testCanvas" width="400" height="400"></canvas>
   </div>
@@ -46,6 +47,7 @@ Mary Shelley (1818) </p>
   		image = new Image();
   		image.onload = handleComplete;
   		image.src = "./assets/T01.jpg";
+
 
   		stage = new createjs.Stage("testCanvas");
   		text = new createjs.Text("Loading...", "15px JetBrains Mono", "#00000");
